@@ -7,7 +7,8 @@ public class HungrySingleton {
     // 在初始化阶段给类的静态变量赋初始值
     private static HungrySingleton instance = new HungrySingleton();
 
-    public HungrySingleton() {
+    // 提供私有的静态方法是为了不让直接通过new创建对象
+    private HungrySingleton() {
     }
 
     public static HungrySingleton getInstance() {

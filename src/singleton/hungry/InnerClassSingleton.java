@@ -9,7 +9,8 @@ public class InnerClassSingleton {
         private static InnerClassSingleton instance = new InnerClassSingleton();
     }
 
-    public InnerClassSingleton() {
+    // 提供私有的静态方法是为了不让直接通过new创建对象
+    private InnerClassSingleton() {
     }
 
     public static InnerClassSingleton getInstance() {
